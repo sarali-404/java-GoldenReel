@@ -1,23 +1,19 @@
 # JAVA-Project
 This is a web application for a movie theatre 
-The following structure is used in this repository:
 
-JAVA-Project/
-│
-├── src/                     # Source folder (Eclipse will generate this)
-│   └── (Java packages and classes will go here)
-│
-├── WebContent/              # Web application resources
-│   ├── WEB-INF/             # Configuration files (web.xml)
-│   ├── css/                 # CSS files
-│   ├── js/                  # JavaScript files
-│   ├── images/              # Image assets
-│   └── jsp/                 # JSP files
-│
-├── sql/                     # Database scripts
-│   └── schema.sql           # Database schema
-│   └── data.sql             # Sample data
-│
-│
-├── .gitignore               # Ignored files configuration
-└── README.md                # Main project overview 
+Project Folder Structure:
+
+1. src/
+Contains all Java source files, (Eclipse will generate this)
+
+3. WebContent/
+Stores all web application resources:
+
+WEB-INF/: Configuration files (web.xml)
+css/: Stylesheets 
+js/: JavaScript files 
+images/: All image assets used in the application
+jsp/: JSP files for dynamic web pages
+
+5. sql/
+Holds database scripts:
