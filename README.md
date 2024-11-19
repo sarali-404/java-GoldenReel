@@ -20,4 +20,4 @@ JAVA-Project/
 │
 │
 ├── .gitignore               # Ignored files configuration
-└── README.md                # Main project overview
+└── README.md                # Main project overview 
