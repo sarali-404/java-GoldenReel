@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}           
+section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-container {
+    background-color:#e3e1e1;
+    padding: 70px 40px; /* Increases vertical padding for more height */
+    border: 1px solid #e7ac47; /* Gold Border */
+    box-shadow: 0 4px 8px rgba(231, 172, 71, 0.4); /* Glow Effect */
+    border-radius: 8px; /* Rounded Corners */
+    width: 100%;
+    max-width: 700px; /* Increases the maximum width */
+    margin: 0 20px; /* Ensures spacing on smaller screens */
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #000000 ;
+    font-weight:lighter;
+    font-size: 35px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    color:#000000;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e7ac47;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #f5cc28;
+}
+
+.register-link {
+    margin-top: 15px;
+    color: #000000;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

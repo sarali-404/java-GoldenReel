@@ -1,0 +1,89 @@
+.checkout-container {
+  max-width: 850px;
+  margin: 45px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.checkout-container h3,h4 {
+  color: #e7ac47;
+  font-weight: bold;
+}
+
+
+.checkout-card {
+  background-color: #e3e1e1;
+  border: 1px solid #e7ac47;
+  border-radius: 8px;
+  padding: 20px;
+  color: #000000;
+  box-shadow: 0 4px 8px rgba(231, 172, 71, 0.4);
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #e7ac47;
+  margin: 20px 0;
+}
+
+/* Order Summary Styling */
+.order-summary {
+  background-color: #343131; /* Golden background */
+  color: #ffffff; /* White text */
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(231, 172, 71, 0.6); /* Glow effect */
+}
+
+.order-summary h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e7ac47;
+}
+
+
+/* General Section Styles */
+label {
+  color: #000000;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.checkout-container input[type="text"], 
+.checkout-container input[type="email"], 
+.checkout-container input[type="tel"], 
+.checkout-container input[type="month"], 
+.checkout-container input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 15px;
+}
+
+button.pay-now {
+  background-color: #1eb50a;
+}
+
+button.cancel {
+  background-color: #b22222;
+}
+
+button:hover {
+  opacity: 0.9;
+}
