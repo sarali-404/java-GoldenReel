@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -25,7 +26,10 @@ nav ul {
 nav ul li.logo{
     flex: 1;
     font-size: 30px;
-    font-weight: 700;
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e7ac47;
 }
 
 nav ul div.items{
@@ -36,7 +40,13 @@ nav ul div.items a{
     text-decoration: none;
     font-size: 18px;
     padding: 0 12px;
-    color: #ffffff;
+    color: #e7ac47;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul div.items a:hover{
+    color:#f5cc28;
+
 }
 nav ul .search-icon{
     height: 40px;

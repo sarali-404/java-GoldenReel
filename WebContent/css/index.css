@@ -8,11 +8,61 @@ body {
 .hero-section {
     display: flex;
     padding: 20px;
-    background: url('../images/abc\ cinama\ 1.jpg') no-repeat center/cover;
+    background: url('../images/hero.jpg') no-repeat center/cover;
     background-color: #000000;
-    height: 400px;
-    align-items: flex-end;
-    position: relative;
+    height: 500px; /* Keep the same height */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    position: relative; /* Set the section as a reference for absolute positioning */
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    color: white;
+    padding: 40px 60px; /* Adjust padding for the content box */
+    border-radius: 15px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    width: 100%; /* Make the content take the full width */
+    height: 100%;
+    max-width: none; /* Remove max-width limitation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Optional shadow */
+    position: absolute; /* Use absolute positioning */
+    top: 0px; /* Adjust this value to move the box higher or lower */
+    left: 0; /* Align left side to the section */
+    right: 0; /* Align right side to the section */
+}
+
+
+.hero-content h1 {
+    margin-top: 60px;
+    font-size: 6rem; /* Larger font size for heading */
+    margin-bottom: 10px; /* Increased space below heading */
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-content p {
+    font-size: 2rem; /* Slightly larger font size for paragraph */
+    line-height: 0; /* Improved readability */
+    font: 100;
+    color: #979797;
+}
+/* Button styles */
+.book-now-btn {
+    background-color: #e7ac47; /* Tomato color */
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 100px; /* Space between the paragraph and button */
+}
+
+.book-now-btn:hover {
+    background-color: #f5bd45; /* Darker shade when hovering */
 }
 
 .btn {
@@ -32,8 +82,8 @@ body {
 }
 h2.section-heading {
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #ffeb3b; /* Yellow color for underline */
+    text-decoration: none;
+    color: #ffffff;
     text-underline-offset: 10px; /* Increase the gap between text and underline */
     text-decoration-thickness: 2px; /* Adjust the thickness of the underline */
     margin: 20px 0; /* Adjust the margin around the heading */
