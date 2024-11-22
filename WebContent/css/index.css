@@ -111,3 +111,70 @@ h2.section-heading {
 .movie-info {
     padding: 10px;
 }
+.filter-section {
+    text-align: right;
+    margin: 20px 50px;
+}
+
+.filter-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  /* Match the site theme */
+  background-color: black; /* Match the site theme */
+  color: #e7ac47;
+  padding: 6px 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+   
+    
+/* Dropdown Content (Hidden by default) */
+.dropdown-content {
+    background-color: #444;
+    display: none;
+    position: absolute;
+     /* Match the dropdown menu with the theme */
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown Content Links */
+.dropdown-content a {
+
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+/* Hover Effect for Links */
+.dropdown-content a:hover {
+    background-color: #555; /* Highlight effect */
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown Button Hover Effect */
+.dropdown-button:hover {
+    background-color: #555;
+}
