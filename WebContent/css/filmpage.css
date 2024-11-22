@@ -64,7 +64,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 
 .movie-banner img.movie-poster {
 width: 1000px;
-height: auto;
+height: 400px;
 object-fit: cover;
 }
 
