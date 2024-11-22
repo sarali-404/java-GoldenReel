@@ -1,0 +1,300 @@
+
+/* General Styles */
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(to bottom, #000000, #1a1a1a);
+color: #fff;
+}
+
+.movie-page-container {
+max-width: 1200px;
+margin: auto;
+padding: 20px;
+}
+
+/* Header */
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
+background-color: #222;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+border-radius: 8px;
+}
+
+.header .logo {
+font-size: 28px;
+font-weight: 600;
+color: #ffc107;
+}
+
+.header .search-bar input {
+padding: 10px;
+border-radius: 20px;
+border: 1px solid #555;
+background-color: #1a1a1a;
+color: #fff;
+width: 300px;
+}
+
+.header .search-bar input::placeholder {
+color: #bbb;
+}
+
+.header .location {
+font-size: 16px;
+}
+
+.header .menu-icon {
+font-size: 20px;
+cursor: pointer;
+}
+
+/* Movie Banner */
+.movie-banner {
+display: flex;
+margin: 20px 0;
+background: #333;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.movie-banner img.movie-poster {
+width: 1000px;
+height: auto;
+object-fit: cover;
+}
+
+.movie-info {
+padding: 20px;
+}
+
+.movie-info .movie-title {
+font-size: 32px;
+margin: 0;
+color: #ffc107;
+}
+
+.movie-info p {
+margin: 10px 0;
+}
+
+.movie-info .description {
+margin-top: 20px;
+font-size: 16px;
+line-height: 1.5;
+color: #bbb;
+}
+
+.Booknow-btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #e7ac47;
+
+}
+
+.Booknow-btn:hover {
+background-color: #f5cc28;
+transform: scale(1.1);
+}
+
+/* Showtime Section */
+.showtime-section {
+background-color: #1c1c1c;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.filters {
+align-items: center;
+justify-content: space-between;
+}
+
+.filter-btn {
+background-color: #ffc107;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+color: #000;
+
+}
+
+.filter-btn:hover {
+background-color: #ffdd00;
+
+}
+
+.price-range {
+font-size: 16px;
+}
+
+.availability-status span {
+margin-right: 15px;
+font-size: 14px;
+}
+
+
+.available {
+color: #4caf50;
+}
+
+.filling-fast {
+color: #ff9800;
+}
+
+.sold-out {
+color: #f44336;
+}
+
+.lapsed {
+color: #9e9e9e;
+}
+
+/* Cinema List */
+.cinema-list h2 {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.cinema-list p {
+margin-bottom: 15px;
+}
+
+.showtimes {
+display: flex;
+}
+
+.time-btn {
+padding: 10px 15px;
+margin-right: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+background-color: #e7ac47;
+color: #000000;
+}
+
+.time-btn:hover {
+transform: scale(1.07);
+}
+
+
+
+
+.seat-selection-container {
+    max-width: 1170px;
+    text-align: center;
+    margin-left: 170px;
+    margin-bottom: 40px;
+    background-color: #1a1a1a;
+    padding: 20px;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    color: #ffc107;
+  }
+
+  /* Seat Container */
+  .seat-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .seat {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #555;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .seat:hover {
+    transform: scale(1.1);
+  }
+
+  /* Seat States */
+  .available {
+    background-color: #444;
+  }
+
+  .reserved {
+    background-color: #d32f2f;
+  }
+
+  .selected {
+    background-color: #4caf50;
+  }
+
+  /* Screen */
+  .screen {
+    margin-top: 20px;
+    width: 90%;
+    height: 20px;
+    background-color: #6d1c1c;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    padding-bottom:3px;
+  }
+
+  /* Legend */
+  .legend {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .legend-item span {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  .legend-available {
+    background-color: #444;
+  }
+
+  .legend-reserved {
+    background-color: #d32f2f;
+  }
+
+  .legend-selected {
+    background-color: #4caf50;
+  }
+
+
