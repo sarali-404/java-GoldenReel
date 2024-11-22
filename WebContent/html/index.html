@@ -47,39 +47,75 @@
       </section>
       
       
-    <section class="movie-section">
-        <h2 class="section-heading">Now Showing</h2>
-        <div class="movie-grid">
-            <div class="movie-card">
-                <img src="../images/film1.jpg" alt="Queen's Gambit">
-                <div class="movie-info">
-                    <h3>Queen's Gambit</h3>
-                    <a href="#" class="btn">Book Tickets</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/film2.jpg" alt="Tenet">
-                <div class="movie-info">
-                    <h3>Tenet</h3>
-                    <a href="#" class="btn">Book Tickets</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/film3.jpg" alt="Monkey Man">
-                <div class="movie-info">
-                    <h3>Monkey Man</h3>
-                    <a href="#" class="btn">Book Tickets</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/film4.jpg" alt="Spirited Away">
-                <div class="movie-info">
-                    <h3>Spirited Away</h3>
-                    <a href="#" class="btn">Book Tickets</a>
-                </div>
+    <section class="filter-section">
+    <div class="filter-group">
+        <div class="dropdown" data-type="genre">
+            <button class="dropdown-button" data-selected="all-genres">GENRE</button>
+            <div class="dropdown-content">
+                <a href="#" data-filter="all-genres">All Genres</a>
+                <a href="#" data-filter="action">Action</a>
+                <a href="#" data-filter="Romance">Romance</a>
+                <a href="#" data-filter="drama">Drama</a>
+                <a href="#" data-filter="adventure">Adventure</a>
             </div>
         </div>
-    </section>
+
+        <div class="dropdown" data-type="format">
+            <button class="dropdown-button" data-selected="all-formats">FORMAT</button>
+            <div class="dropdown-content">
+                <a href="#" data-filter="all-formats">All Formats</a>
+                <a href="#" data-filter="2d">2D</a>
+                <a href="#" data-filter="3d">3D</a>
+            </div>
+        </div>
+
+        <div class="dropdown" data-type="language">
+            <button class="dropdown-button" data-selected="all-languages">LANGUAGE</button>
+            <div class="dropdown-content">
+                <a href="#" data-filter="all-languages">All Languages</a>
+                <a href="#" data-filter="english">English</a>
+                <a href="#" data-filter="tamil">Tamil</a>
+                <a href="#" data-filter="hindi">Hindi</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="movie-section">
+    <h2 class="section-heading">Now Showing</h2>
+    <div class="movie-grid">
+        <div class="movie-card" data-genre="action" data-format="2d" data-language="english">
+            <img src="../images/film1.jpg" alt="Inception">
+            <div class="movie-info">
+                <h3>Inception</h3>
+                <a href="#" class="btn">Book Tickets</a>
+            </div>
+        </div>
+        <div class="movie-card" data-genre="action" data-format="3d" data-language="english">
+            <img src="../images/film2.jpg" alt="Tenet">
+            <div class="movie-info">
+                <h3>Tenet</h3>
+                <a href="#" class="btn">Book Tickets</a>
+            </div>
+        </div>
+        <div class="movie-card" data-genre="adventure" data-format="2d" data-language="english">
+            <img src="../images/film3.jpg" alt="Monkey Man">
+            <div class="movie-info">
+                <h3>Monkey Man</h3>
+                <a href="#" class="btn">Book Tickets</a>
+            </div>
+        </div>
+        <div class="movie-card" data-genre="adventure" data-format="3d" data-language="english">
+            <img src="../images/film4.jpg" alt="Spirited Away">
+            <div class="movie-info">
+                <h3>Spirited Away</h3>
+                <a href="#" class="btn">Book Tickets</a>
+            </div>
+        </div>
+    </div>
+</section>
+
     <section class="movie-section">
         <h2 class="section-heading">Coming Soon</h2>
         <div class="movie-grid">
