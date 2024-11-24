@@ -1,0 +1,169 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark grey */
+    color: #f1f1f1; /* Light gray */
+}
+
+/* Heading Font Styling */
+h1, h2 {
+    font-family: 'Georgia', serif; /* Adding a serif font for a more classic heading style */
+}
+
+h1 {
+    font-size: 2.5em; /* Larger size for main headings */
+}
+
+h2 {
+    font-size: 2em; /* Slightly smaller size for subheadings */
+}
+
+.divider {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us {
+    background-color: #1a1a1a; /* A slightly different dark gray for distinction */
+    padding: 60px 40px; /* Adjusted padding for uniformity with other sections */
+}
+
+.about-us h1 {
+    color: #e7ac47; /* Yellow-gold */
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    color: #e3e1e1; /* Light gray */
+    font-family: Arial, sans-serif; 
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin-bottom: 30px;
+}
+
+.carousel{
+    position:relative;
+    max-width: 100%;
+    max-height: 30%;
+    margin: 20px auto;
+    overflow: hidden; /* Hides parts of the images outside the container */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /*Shadow for depth*/
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    min-width: 100%; /*full container width */
+    height: auto;
+    border-radius: 15px;
+    filter: brightness(0.85); /*Slight dim effect*/
+}
+
+/*Border fade effect*/
+.carousel img::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,trabsparent,#121212); /*Fades into the background*/
+    z-index:1;
+}
+
+
+/* Carousel Navigation Buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e3e1e1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+    z-index: 2; /* Ensure buttons are above images */
+    border-radius: 5px;
+    transition: background-color 0.3s,transform 0.3s;
+}
+    
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: #343131; /* Slightly dark gray for hover effect */
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* Vision and Mission Card Styling */
+.vision, .mission {
+    background-color: #2A2A2A; /* Slightly lighter than main background for contrast */
+    border-radius: 10px; /* Rounded corners for a card effect */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin: 30px auto;
+    width: 80%;
+}
+
+/* Heading Icons for Vision and Mission */
+.vision::before, .mission::before {
+    content: url('images/icon.png'); /* Replace with relevant icons for Vision and Mission */
+    display: block;
+    margin: 0 auto 10px auto;
+    height: 50px;
+}
+
+/* Vision and Mission Section General Styling */
+.vision-mission {
+    background-color: linear-gradient(135deg, #1C1C1C, #252525); /* Slightly lighter than black */
+    padding: 60px 40px;
+    margin-top: 50px;
+}
+
+.vision-mission h2 {
+    color: #e7ac47; /* Firebrick red */
+    margin-bottom: 20px;
+}
+
+.vision-mission p {
+    margin: 20px 0;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif; 
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+
+/* Call to Action Button Styling */
+.call-to-action {
+    background-color: #FF6347; /* Firebrick red for contrast */
+    color: #ffffff; /* White text for readability */
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
+}
+
+/* Hover Effect for Call to Action */
+.call-to-action:hover {
+    background-color: #FF4500; /* Darker red for hover effect */
+    transform: scale(1.05); /* Slight zoom to make it noticeable */
+}
