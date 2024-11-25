@@ -1,0 +1,136 @@
+
+:root {
+    --yellow-gold: #e7ac47;
+    --light-yellow: #f5cc28;
+    --firebrick-red: #b22222;
+    --black: #000000;
+    --white: #ffffff;
+    --light-gray: #e3e1e1;
+    --dark-gray: #343131;
+    --dark-blue: #010115;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: var(--dark-blue);
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+}
+
+header h1 {
+    color: var(--yellow-gold);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    color: var(--light-yellow);
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+}
+
+
+/* Center the feedback section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.feedback-section {
+    background-color: var(--dark-gray);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.feedback-section h2 {
+    color: var(--yellow-gold);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.feedback-section p {
+    color: var(--light-yellow);
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* Form styling */
+.feedback-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.feedback-form label {
+    display: block;
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    background-color: var(--light-gray);
+    font-size: 1rem;
+    color: var(--black);
+    box-sizing: border-box;
+}
+
+.feedback-form textarea {
+    resize: none;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: var(--yellow-gold);
+    box-shadow: 0 0 5px var(--yellow-gold);
+}
+
+/* Submit button */
+.submit-button {
+    background-color: var(--yellow-gold);
+    color: var(--black);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: var(--light-yellow);
+    transform: translateY(-2px);
+}
+.footer{
+    width: 100%;
+}
