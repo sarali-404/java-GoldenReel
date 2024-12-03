@@ -1,0 +1,131 @@
+body {
+    font-family: 'Sawarabi Mincho', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black */
+    color: #fff; /* White */
+}
+
+header.navbar {
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out brand and links */
+    background-color: #303030; /* Dark Blue */
+    color: #e7ac47; /* Golden Reel color */
+}
+
+/* Golden Reel Brand */
+header .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f5cc28; /* Dark Yellow for Golden Reel */
+    text-decoration: none; /* Remove underline */
+}
+
+header .navbar-brand:hover {
+    color: #f5cc28; /* Keep color consistent on hover */
+}
+
+/* Navigation Links Styling */
+header .navbar-nav {
+    display: flex;
+    align-items: center; /* Center links vertically */
+    gap: 1rem; /* Adjust spacing between links */
+}
+
+header .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #f5cc28; /* Default Dark Yellow color for links */
+    padding: 0.5rem 1rem; /* Consistent padding for links */
+    transition: color 0.3s ease; /* Smooth transition for links only */
+}
+
+/* Hover Effect */
+header .navbar-nav .nav-link:hover {
+    color: #e7ac47; /* Slightly brighter on hover */
+}
+
+/* Active (Clicked) Link */
+header .navbar-nav .nav-link:active {
+    color: #e7ac47; /* Golden Reel color on click */
+}
+
+/* Logout Button */
+header .btn {
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #e7ac47; /* Yellow-Gold for buttons */
+    color: #000; /* Black text for buttons */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #f5cc28; /* Light Yellow on hover */
+    color: #000; /* Black text on hover */
+}
+
+.feedbacks-container {
+    padding: 90px;
+    text-align: center;
+}
+
+h1 {
+    color: #f5cc28;
+    margin-bottom: 20px;
+}
+
+.feedbacks-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.feedbacks-table th,
+.feedbacks-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+.feedbacks-table th {
+    background-color: #333;
+    color:floralwhite;
+}
+
+.feedbacks-table tr:hover {
+    background-color: #333;
+}
+
+button.view-btn,
+button.delete-btn {
+    background-color: #e7ac47;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.view-btn:hover,
+button.delete-btn:hover {
+    background-color: #f5cc28;
+}
+
+button.delete-btn {
+    background-color: #d9534f;
+}
+
+button.delete-btn:hover {
+    background-color: #c9302c;
+}
