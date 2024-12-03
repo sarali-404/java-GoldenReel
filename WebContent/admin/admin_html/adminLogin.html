@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="../css/adminstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Header-->
+    <header class="navbar navbar-dark bg-dark">
+        <div class="nav">
+            <span class="navbar-brand">Golden Reel</span>
+        </div>
+            <!-- Right Side: Navigation Links -->
+            <nav class="navbar-nav" >
+                <a href="admindashboard.html" class="nav-link">Dashboard</a>
+                <a href="manageMovies.html" class="nav-link">Manage Movies</a>
+                <a href="manageShowtimes.html" class="nav-link">Manage Showtimes</a>
+                <a href="feedbacks.html" class="nav-link">View Feedbacks</a>
+                <button class="btn btn-warning btn-sm ms-auto" onclick="location.href='logout.html'">Logout</button>
+            </nav>
+    </header>
+    <!--Login Form-->
+    <div class="login-container">
+        <h1>Admin Login</h1>          
+        <form action="admindashboard.html" method="GET">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="enter-btn">Enter</button>
+        </form>
+    </div>
+</body>
+</html>
