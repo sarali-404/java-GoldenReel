@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Movies</title>
+    <link rel="stylesheet" href="../css/adminstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Header-->
+    <header class="navbar navbar-dark bg-dark">
+        <div class="nav">
+            <span class="navbar-brand">Golden Reel</span>
+        </div>
+            <!-- Right Side: Navigation Links -->
+            <nav class="navbar-nav" >
+                <a href="admindashboard.html" class="nav-link">Dashboard</a>
+                <a href="manageMovies.html" class="nav-link">Manage Movies</a>
+                <a href="manageShowtimes.html" class="nav-link">Manage Showtimes</a>
+                <a href="feedbacks.html" class="nav-link">View Feedbacks</a>
+                <button class="btn btn-warning btn-sm ms-auto" onclick="location.href='logout.html'">Logout</button>
+            </nav>
+    </header>
+    <h2 class="form-title">Add New Movies</h2>
+    <form action="saveMovie.jsp" method="post" class="movie-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" required><br><br>
+
+        <label for="language">Language:</label>
+        <input type="text" id="language" name="Language" required><br><br>
+
+        <label for="poster">Poster (JPG URL):</label>
+        <input type="text" id="poster" name="poster" placeholder="e.g., https://example.com/poster.jpg"><br><br>
+
+        <label for="releaseDate">Release Date:</label>
+        <input type="date" id="releaseDate" name="releaseDate"><br><br>
+
+        <label for="director">Directed By:</label>
+        <input type="text" id="director" name="director" required><br><br>
+
+        <label for="cast">Cast:</label>
+        <input type="text" id="cast" name="cast" placeholder="e.g., Actor1, Actor2"><br><br>
+
+        <label for="duration">Duration (in minutes):</label>
+        <input type="number" id="duration" name="duration" min="1" required><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="40" placeholder="Enter a brief movie description"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>
