@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Movies</title>
+    <link rel="stylesheet" href="../css/adminstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="navbar navbar-dark bg-dark">
+        <div class="nav">
+            <span class="navbar-brand">Golden Reel</span>
+        </div>
+        <nav class="navbar-nav">
+            <a href="admindashboard.html" class="nav-link">Dashboard</a>
+            <a href="manageMovies.html" class="nav-link active">Manage Movies</a>
+            <a href="manageShowtimes.html" class="nav-link">Manage Showtimes</a>
+            <a href="feedbacks.html" class="nav-link">View Feedbacks</a>
+            <button class="btn btn-warning btn-sm ms-auto" onclick="location.href='logout.html'">Logout</button>
+        </nav>
+    </header>
+
+    <!-- Table Section -->
+    <div class="container">
+        <h1>Manage Movies</h1>
+        <button class="btn add-new-btn" onclick="location.href='addMovie.html'">Add New Movie</button>
+
+        <!-- Table for Movie Data -->
+        <table class="movie-table">
+            <thead>
+                <tr>
+                    <th>Movie ID</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Format</th>
+                    <th>Language</th>
+                    <th>Description</th>
+                    <th>Image URL</th>
+                    <th>Trailer URL</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted dynamically via server-side scripting -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button class="btn delete-btn"onclick="confirmDelete()">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function confirmDelete() {
+            if (confirm("Are you sure you want to delete this movie?")) {
+                alert("Movie deleted successfully!");
+            } else {
+                alert("Action canceled.");
+            }
+        }
+    </script>
+</body>
+</html>
