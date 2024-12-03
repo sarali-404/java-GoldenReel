@@ -1,0 +1,151 @@
+body {
+    font-family: 'Sawarabi Mincho', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black */
+    color: #fff; /* White */
+}
+
+/* Navbar Styling */
+
+header.navbar {
+    display: flex;
+    justify-content: space-between; /* Align brand on left, button on right */
+    align-items: center; /* Vertically align items */
+    padding: 1rem 2rem; /* Add spacing */
+    background-color: #303030; /* Dark Blue background */
+    color: #f5cc28; /* Golden Reel Yellow color */
+    
+}
+
+/* Golden Reel Brand */
+header .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f5cc28; /* Dark Yellow for Golden Reel */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Navigation Links Container */
+header .navbar-nav {
+    display: flex;
+    align-items: center; /* Center links vertically */
+    gap: 1rem; /* Spacing between links */
+}
+
+/* Navigation Links */
+header .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #f5cc28; /* Default Dark Yellow color for links */
+    padding: 0.5rem 1rem; /* Consistent padding for links */
+    transition: color 0.3s ease;
+}
+
+header .navbar-nav .nav-link:hover {
+    color: #e7ac47; /* Slightly brighter on hover */
+}
+
+
+
+header .navbar-brand:hover {
+    color: #f5cc28;
+     /* Keep color consistent on hover */
+}
+
+
+/* Add Showtime Container */
+.add-showtime-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full-page height */
+    background-color: #000; /* Match the background */
+    padding: 100px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #f5cc28; /* Golden Reel color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Showtime Form */
+.showtime-form {
+    background-color: #222; /* Dark Gray */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    max-width: 500px;
+    width: 100%;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* White text for labels */
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    font-size: 1rem;
+    color: #000;
+}
+
+input::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+input:focus {
+    border-color: #e7ac47; /* Highlighted border color */
+    outline: none;
+    box-shadow: 0 0 5px #e7ac47;
+}
+
+/* Submit Button */
+button.submit-button {
+    background-color: #e7ac47; /* Golden color */
+    color: #000; /* Black text */
+    font-weight: bold;
+    width: 100%; /* Full width for the form button */
+    padding: 10px; /* Consistent padding */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.submit-button:hover {
+    background-color: #f5cc28; /* Lighter golden color */
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Logout Button */
+button.logout-btn {
+   
+    width: 100px; /* Button width adjusts to content */
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #e7ac47; /* Yellow-Gold for buttons */
+    color: #000; /* Black text for buttons */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;    
+}
+
+button.logout-btn:hover {
+    background-color: #f5cc28; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Slight hover effect */
+   
+}
