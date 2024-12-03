@@ -1,0 +1,380 @@
+
+/* General Styling */
+body {
+    font-family: 'Sawarabi Mincho', Arial, sans-serif;
+    background-color: #000; /* Black */
+    color: #f1f1f1; /* Light gray */
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    height: 100%;
+    box-sizing: border-box; /*padding in calculations*/
+}
+
+/* Header Navbar Styling */
+header.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height:60px;
+  z-index: 1000;
+  padding: 0 20px;
+  display: flex;
+  height: 60px;
+  align-items:center;
+  justify-content: space-between;
+  background-color: #303030; /* Dark Blue */
+  color: #e7ac47; /* Golden Reel color */
+}
+
+/* Golden Reel Brand */
+header .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5cc28; /* Dark Yellow for Golden Reel */
+  text-decoration: none; /* Remove underline */
+}
+header .navbar-brand:hover {
+  color: #f5cc28; /* Keep color consistent on hover */
+}
+
+/* Navigation Links Styling */
+header .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .navbar-nav .nav-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #f5cc28; /* Yellow */
+  padding: 0.5rem 1rem;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Hover Effect */
+header .navbar-nav .nav-link:hover {
+  color: #e7ac47; /* Slightly brighter on hover */
+}
+
+/* Active (Clicked) Link */
+header .navbar-nav .nav-link:active {
+  color: #e7ac47; /* Golden Reel color on click */
+}
+
+/* Logout Button */
+header .btn {
+  width: 100px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #e7ac47; /* Yellow-Gold for buttons */
+  color: #000; /* Black text for buttons */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .btn:hover {
+  background-color: #f5cc28; /* Light Yellow on hover */
+  color: #000; /* Black text on hover */
+}
+
+
+/* Login Container Styling */
+.login-container {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  text-align: center;
+  width: 300px;
+  margin-top: 20px; /*add space between navbar anf form*/
+  margin: 0 auto;
+  position: relative;
+  clear:both;/*Prevent Overlapping*/
+}
+
+
+/* Login Container Styling */
+.login-container, .dashboard-container {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin:auto;
+}
+
+h1 {
+    color: #FFD700; /* Gold */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #e3e1e1;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #252525;
+    color: #f1f1f1;
+}
+
+button {
+    width:150px;
+    height: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #FFC107; /* Lighter gold */
+}
+
+/* Dashboard Navigation Buttons */
+.nav-btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #8e8f8cab; /* Firebrick red */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    background-color: #FF4500; /* Darker red */
+}
+
+/*Movie manage container*/
+.container {
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.h1{
+  color: #FFD700; /* Gold */
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.movie-grid {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.movie-card {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.delete-btn,
+.add-new-btn {
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.delete-btn{
+    background-color: rgb(183, 27, 35);
+}
+.add-new-btn{
+    background-color: rgb(235, 190, 8);
+}
+.delete-btn:hover,
+.add-new-btn:hover {
+    background-color: #ffa000;
+}
+
+.add-new-btn {
+    margin-top: 30px;
+    display:inline;
+    width: 20%;
+}
+
+/*Add New Movies styling*/
+.form-title {
+    text-align:center;
+    position:relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+    margin-left: 90px;
+    font-size: 40px;
+    color: #ffcc00;
+}
+
+/* Centered Form */
+.movie-form {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+    border: 2px solid #8b8a8a;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+}
+
+/* Label and Input Styles */
+.movie-form label {
+    display:inline;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.movie-form input, .movie-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit Button Styles */
+.submit-button {
+    width: 150px;
+    height: 40px;
+    display:block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+  /*Manage Movies*/
+  /* Table Styling */
+.movie-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.movie-table th, .movie-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.movie-table th {
+  background-color: #303030;
+  color: #adadac;
+}
+
+.movie-table td {
+  background-color: #252525;
+}
+
+.movie-table tr:hover {
+  background-color: #333;
+}
+
+/* Table Header Styling */
+table th {
+  background-color: #343a40; /* Dark gray */
+  color: #f1f1f1; /* Light gray text */
+  font-weight: bold; /* Bold text */
+  padding: 12px;
+  text-align: center;
+}
+
+/* Hover Effect for Table Headers */
+table th:hover {
+  background-color: #495057; /* Slightly lighter gray on hover */
+  cursor: pointer;
+}
+
+/* Button Styling */
+button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Edit Button (Yellowish tone) */
+button.edit-btn {
+  background-color: #f0ad4e; /* Soft yellow/orange */
+  color: #fff;
+}
+
+button.edit-btn:hover {
+  background-color: #ec971f; /* Slightly darker orange */
+}
+
+/* Delete Button (Red) */
+button.delete-btn {
+  background-color: hsl(2, 71%, 58%); /* Red */
+  color: #fff;
+}
+
+button.delete-btn:hover {
+  background-color: #c9302c; /* Darker red */
+}
+
+/* Add New Button (Green) */
+button.add-new-btn {
+  background-color: #5e8a5e; /* Green */
+  color: #fff;
+}
+
+button.add-new-btn:hover {
+  background-color: #4cae4c; /* Darker green */
+}
