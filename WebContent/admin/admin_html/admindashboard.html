@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/adminstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Header-->
+    <header class="navbar navbar-dark bg-dark">
+        <div class="nav">
+            <span class="navbar-brand">Golden Reel</span>
+        </div>
+            <!-- Right Side: Navigation Links -->
+            <nav class="navbar-nav" >
+                <a href="admindashboard.html" class="nav-link">Dashboard</a>
+                <a href="manageMovies.html" class="nav-link">Manage Movies</a>
+                <a href="manageShowtimes.html" class="nav-link">Manage Showtimes</a>
+                <a href="feedbacks.html" class="nav-link">View Feedbacks</a>
+                <button class="btn btn-warning btn-sm ms-auto" onclick="location.href='logout.html'">Logout</button>
+            </nav>
+    </header>
+    <div class="dashboard-container">
+        <h1>Admin Dashboard</h1><br>
+        <button class="nav-btn" onclick="location.href='manageMovies.html'">Manage Movies</button><br><br>
+        <button class="nav-btn" onclick="location.href='manageShowtimes.html'" >Manage Showtimes</button><br><br>
+        <button class="nav-btn" onclick="location.href='feedbacks.html'">View Feedback</button><br><br>
+    </div>
+</body>
+</html>
