@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Add New Movies</title>
-    <link rel="stylesheet" href="../css/adminstyles.css">
+    <link rel="stylesheet" href="../admin_css/adminstyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
 </head>
@@ -21,8 +21,11 @@
                 <button class="btn btn-warning btn-sm ms-auto" onclick="location.href='logout.html'">Logout</button>
             </nav>
     </header>
-    <h2 class="form-title">Add New Movies</h2>
+    
     <form action="saveMovie.jsp" method="post" class="movie-form">
+
+        <h2 class="form-title">Add New Movies</h2>
+
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" required><br><br>
 
