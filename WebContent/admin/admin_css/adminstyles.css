@@ -85,12 +85,12 @@ header .btn:hover {
 
 /* Login Container Styling */
 .login-container {
-  background-color: #1a1a1a;
+  background-color: #272626;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   padding: 30px;
   text-align: center;
-  width: 300px;
+  width: 800px;
   margin-top: 20px; /*add space between navbar anf form*/
   margin: 0 auto;
   position: relative;
@@ -99,25 +99,37 @@ header .btn:hover {
 
 
 /* Login Container Styling */
-.login-container, .dashboard-container {
-    background-color: #1a1a1a;
+.login-container{
+    background-color: #262525;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    padding: 30px;
+    padding: 50px;
     text-align: center;
-    width: 300px;
-    margin:auto;
+    width: 600px;
+    margin-top:60px;
+}
+
+.dashboard-container {
+  background-color: #262525;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  text-align: center;
+  width: 600px;
+  margin-top:40px;
+  margin-left: 400px;
 }
 
 h1 {
-    color: #FFD700; /* Gold */
+    color: #f7eab9; /* Gold */
     margin-bottom: 20px;
+    padding: 5px;
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
-    color: #e3e1e1;
+    color: #ffffff;
 }
 
 input {
@@ -126,26 +138,29 @@ input {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #252525;
+    background-color: #383733;
     color: #f1f1f1;
 }
 
 button {
-    width:150px;
+    width:200px;
     height: 40px;
     margin: 20px auto;
     padding: 10px;
     background-color: #FFD700;
-    border: none;
+    border:#e7ac47;
     border-radius: 5px;
     color: #121212;
     font-weight: bold;
     cursor: pointer;
+    font-size: medium;
 }
 
 
 button:hover {
-    background-color: #FFC107; /* Lighter gold */
+    background-color: #ffbf00; /* Lighter gold */
+    transition: 0.1s;
+    transform: scale(1.1);
 }
 
 /* Dashboard Navigation Buttons */
@@ -171,7 +186,7 @@ button:hover {
 .container {
     padding: 20px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .h1{
@@ -252,28 +267,31 @@ button:hover {
 
 /* Centered Form */
 .movie-form {
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 650px;
     margin: auto;
     padding: 40px;
     border: 2px solid #8b8a8a;
     border-radius: 8px;
-    background-color: #1e1e1e;
+    background-color: #2e2d2d;
 }
 
 /* Label and Input Styles */
 .movie-form label {
     display:inline;
-    margin-bottom: 8px;
-    font-weight: bold;
+    margin-bottom: 5px;
+    font-weight:200;
 }
 
 .movie-form input, .movie-form textarea {
-    width: 90%;
+    width: 96%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #afaaaa;
     border-radius: 4px;
+    margin-right: 15px;
+    background-color: #d9d9d3;
+    color: #000;
 }
 
 /* Submit Button Styles */
@@ -281,18 +299,18 @@ button:hover {
     width: 150px;
     height: 40px;
     display:block;
-    margin: 20px auto;
+    margin: 5px auto;
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: #007BFF;
+    background-color: #33ff005e;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .submit-button:hover {
-    background-color: #0056b3;
+    background-color: #3cb300;
 }
 
 
