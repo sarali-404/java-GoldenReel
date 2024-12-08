@@ -80,14 +80,15 @@ h1 {
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-    max-width: 500px;
+    max-width: 650px;
     width: 100%;
+    margin-top: 30px;
 }
 
 label {
     font-size: 1rem;
     font-weight: bold;
-    color: #fff; /* White text for labels */
+    color: #bcb7b7; /* White text for labels */
     margin-bottom: 5px;
     display: block;
 }
@@ -118,16 +119,20 @@ button.submit-button {
     background-color: #e7ac47; /* Golden color */
     color: #000; /* Black text */
     font-weight: bold;
-    width: 100%; /* Full width for the form button */
+    width: 50%; /* Full width for the form button */
     padding: 10px; /* Consistent padding */
     cursor: pointer;
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block; /* Ensures it behaves like a block-level element */
+    margin: 0 auto;
+    margin-top: 1.5rem;
 }
 
 button.submit-button:hover {
-    background-color: #f5cc28; /* Lighter golden color */
-    transform: scale(1.05); /* Subtle hover effect */
+    background-color: #f8e07f; 
+    transform: scale(1.05); 
+    transition: 0.1s;
 }
 
 /* Logout Button */
