@@ -19,8 +19,8 @@
                 <li class="logo">Golden Reel</li>
                 <div class="items">
                     <li><a href="home.jsp">Home</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="feedback.html">Feedbacks</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="feedback.jsp">Feedbacks</a></li>
                     <li><a href="login.jsp">Login</a></li>
                 </div>
                 <li class="search-icon">
@@ -66,8 +66,10 @@
 
         <div class="register-link">
             <p>Not a member? <a href="signup.jsp">Register</a></p>
+              <p><a href="admin_login.jsp">Login as an admin</a></p>
         </div>
     </form>
+    
 </div>
 
     </section>

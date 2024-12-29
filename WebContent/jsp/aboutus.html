@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/style.css">
+   <script src="../js/index.js"></script>
+   <title>ABC Cinema - About Us</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo">Golden Reel</li>
+                <div class="items">
+                    <li><a href="home.jsp">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="feedback.jsp">Feedbacks</a></li>
+                    <li><a href="login.jsp">Login</a></li>
+                </div>
+                <li class="search-icon">
+                    <input type="search" placeholder="Search movies">
+                    <label class="icon">
+                        <span class="fas fa-search"></span>
+                    </label>
+                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- About Us section-->
+<section class="about-us">
+    <div class="carousel">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-container">
+              <img src="images/image2.jpeg" alt="Cinema Hall 1">
+              <img src="images/image5.jpeg" alt="Cinema Hall 2">
+              <img src="images/image1.jpeg" alt="Cinema Hall 3">
+              <img src="images/image4.jpeg" alt="Cinema Hall 4">
+              <img src="images/image3.jpeg" alt="Cinema Hall 5">      
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
+    <!--Linear Progress Bar-->
+    <div class="divider">
+        <h1>About Us</h1>
+        <p>Golden Reel is the leading premium film exhibition company, committed to transforming the way audiences experience movies. Since our inception, we have continuously redefined cinema, bringing the latest innovations and comfort to moviegoers across the region. Our cinema halls are equipped with cutting-edge technology, including immersive sound systems and comfortable seating, ensuring that every film becomes a lasting memory for our patrons.<br>Over the years, Golden Reel has grown to encompass a significant cinema circuit, with a wide network of screens showcasing films from various genres, catering to diverse tastes. We pride ourselves on creating an atmosphere where entertainment meets luxury, providing our customers with a premium service that transforms a simple movie outing into an unforgettable experience.Our collection of cinematic formats ranges from our standard screenings to luxurious cinema experiences, making movies accessible and enjoyable for everyone. Whether you're here for the latest blockbuster, a classic favorite, or an indie gem, Golden Reel guarantees a viewing environment with exceptional clarity, sound, and comfort.<br>Golden Reel also curates special events, film festivals, and themed screenings that bring together communities of film enthusiasts. Our dedicated team is driven by a passion for movies and strives to maintain a vibrant and welcoming space for all moviegoers. At Golden Reel, our commitment goes beyond the screen, it's about the entire experience, from the moment you book your ticket to the final credits of the film.</p>
+    </div>
+</section>
+
+<!-- Vision and Mission Section -->
+<section class="vision-mission">
+    <div class="vision">
+        <h2>Our Vision</h2>
+        <p>Our vision at Golden Reel is to redefine the way people experience entertainment by creating unforgettable movie moments that foster joy and nostalgia. We envision ourselves as pioneers in cinema, blending technology, comfort, and storytelling in a way that captivates audiences of all ages. Our goal is to be recognized as the premier destination for entertainment, connecting people through the universal language of film, and inspiring them with stories that transcend boundaries. We aim to bring together passion, innovation, and hospitality to make Golden Reel synonymous with not just a movie experience but a cherished memory.</p>
+    </div>
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <p>Golden Reel's mission is to provide exceptional entertainment experiences that go beyond the ordinary movie outing. We are committed to leading the cinema industry by offering our customers a blend of the latest cinematic technology and personalized service. We strive to create an environment that enhances the emotional impact of storytelling, ensuring that every guest leaves our cinemas feeling thrilled and fulfilled.Our mission includes broadening the availability of international and independent cinema in addition to the mainstream. We believe in creating a platform where different voices and diverse stories can be shared and celebrated. We aim to offer a space where quality content can flourish – be it Hollywood blockbusters, regional cinema, or smaller independent productions that deserve an audience.</p>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section about">
+            <h3>About ABC Cinema</h3>
+            <p>ABC Cinema offers a premier movie experience with the latest releases, comfortable seating, and a range of snacks. Join us for a fantastic viewing experience!</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Now Showing</a></li>
+                <li><a href="#">Coming Soon</a></li>
+                <li><a href="#">Your Tickets</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Address: 123 Movie Lane, Film City, FC 12345</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Email: support@abccinema.com</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="#"><img src="images/icons8-facebook-50.png" alt="Facebook"></a>
+            <a href="#"><img src="images/x.png" alt="Twitter"></a>
+            <a href="#"><img src="images/icons8-instagram-50.png" alt="Instagram"></a>
+            <a href="#"><img src="images/icons8-youtube-50.png" alt="YouTube"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 ABC Cinema. All Rights Reserved.</p>
+    </div>
+</footer>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Movies</title>
+    <link rel="stylesheet" href="css/adminstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Header-->
+    <header class="navbar navbar-dark bg-dark">
+        <div class="nav">
+            <span class="navbar-brand">Golden Reel</span>
+        </div>
+            <!-- Right Side: Navigation Links -->
+            <nav class="navbar-nav" >
+                <a href="adminDashboard.html" class="nav-link">Dashboard</a>
+                <a href="manageMovies.jsp" class="nav-link">Manage Movies</a>
+                <a href="manageShowtimes.jsp" class="nav-link">Manage Showtimes</a>
+                <a href="viewFeedbacks.jsp" class="nav-link">View Feedbacks</a>
+                 <button class="btn btn-warning btn-sm ms-auto" onclick="location.href='admin_login.jsp'">Login</button>
+            </nav>
+    </header>
+    
+    <form action="addMovie" method="post" class="movie-form">
+
+        <h2 class="form-title">Add New Movies</h2>
+
+     	<label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" required><br><br>
+
+        <label for="format">Format:</label>
+        <input type="text" id="format" name="format" required><br><br>
+
+        <label for="language">Language:</label>
+        <input type="text" id="language" name="language" required><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="40" placeholder="Enter a brief movie description"></textarea><br><br>
+
+        <label for="imageUrl">Image URL:</label>
+        <input type="text" id="imageUrl" name="imageUrl" required placeholder="e.g., /images/movie.jpg"><br><br>
+
+        <label for="trailerUrl">Trailer URL:</label>
+        <input type="text" id="trailerUrl" name="trailerUrl" required placeholder="e.g., https://youtube.com/trailer"><br><br>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="Now Showing">Now Showing</option>
+            <option value="Coming Soon">Coming Soon</option>
+        </select><br><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" min="0" step="0.01" required><br><br>
+
+        <label for="duration">Duration (in minutes):</label>
+        <input type="number" id="duration" name="duration" min="1" required><br><br>
+
+        <label for="releaseDate">Release Date:</label>
+        <input type="date" id="releaseDate" name="releaseDate" required><br><br>
+
+        <label for="cast">Cast:</label>
+        <input type="text" id="cast" name="cast" required placeholder="e.g., Actor1, Actor2"><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>

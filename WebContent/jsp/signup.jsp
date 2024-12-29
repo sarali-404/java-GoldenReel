@@ -17,10 +17,10 @@
             <ul>
                 <li class="logo">Golden Reel</li>
                 <div class="items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Feedbacks</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="home.jsp">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="feedback.jsp">Feedbacks</a></li>
+                    <li><a href="login.jsp">Login</a></li>
                 </div>
                 <li class="search-icon">
                     <input type="search" placeholder="Search movies">
@@ -35,6 +35,7 @@
 
     <section>
         <div class="signup-container">
+        
             <form action="addUser" method="POST" class="signup-form">
                 <h2>SIGN UP</h2>
 
@@ -71,24 +72,16 @@
                 </div>
 
                 <button type="submit" class="signup-btn">Sign Up</button>
-                
-                
-                
-
+                                    
                 <div class="login-link">
-                    <p>Already have an account? <a href="login.html">Login</a></p>
+                    <p>Already have an account? <a href="login.jsp">Login</a></p>
                 </div>
             </form>
+            
         </div>
     </section>
 
-                <div class="login-link">
-                    <p>Already have an account? <a href="login.html">Login</a></p>
-                </div>
-            </form>
-        </div>
-    </section>
-    
+              
    
     <footer class="footer">
         <div class="footer-content">
