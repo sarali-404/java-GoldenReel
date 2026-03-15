@@ -27,10 +27,7 @@ public class EmailServlet extends HttpServlet {
         
 
         // Email configuration
-        String fromEmail = "malithashen50904@gmail.com"; 
-        String emailPassword = "lmqi ddtx kapl tmfo"; 
-        String smtpHost = "smtp.gmail.com";
-        int smtpPort = 587;
+        
 
         String subject = "Golden Reel Cinema Booking Confirmation";
         String messageContent = "Dear " + fullName + ",\n\n"
